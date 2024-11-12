@@ -51,14 +51,25 @@ class ProjectSettingsMenu extends React.Component<{}, IProjectSettingsMenuState>
                 <Button text="Set Permission" onClick={this.setPermission} />
             </div>
         );
-    }
 
+    }
+    
     private onGroupChanged = (event: React.SyntheticEvent<HTMLElement>, item: string): void => {
-        this.setState({ selectedGroup: new ObservableValue<string>(item) });
+        this.setState(prevState => ({
+            selectedGroup: {
+                ...prevState.selectedGroup,
+                value: item
+            }
+        }));
     }
-
+    
     private onPermissionChanged = (event: React.SyntheticEvent<HTMLElement>, item: string): void => {
-        this.setState({ selectedPermission: new ObservableValue<string>(item) });
+        this.setState(prevState => ({
+            selectedPermission: {
+                ...prevState.selectedPermission,
+                value: item
+            }
+        }));
     }
 
     private async loadGroups(): Promise<void> {

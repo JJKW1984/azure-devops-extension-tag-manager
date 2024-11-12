@@ -1,12 +1,16 @@
 {
     "manifestVersion": 1,
-    "id": "samples-dev",
-    "publisher": "ms-samples",
-    "version": "1.0.396",
-    "name": "Extension Sample [DEV]",
-    "description": "Azure DevOps extension sample. For development purposes only.",
+    "id": "azure-devops-extension-tag-management",
+    "publisher": "JJKW1984",
+    "version": "0.1.0",
+    "name": "Azure DevOps Tag Management",
+    "description": "Azure DevOps Extension",
     "categories": [
-        "Azure Pipelines"
+        "Azure Repos",
+        "Azure Boards",
+        "Azure Pipelines",
+        "Azure Test Plans",
+        "Azure Artifacts"
     ],
     "targets": [
         {

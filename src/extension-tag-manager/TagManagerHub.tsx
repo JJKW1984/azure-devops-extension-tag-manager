@@ -5,7 +5,7 @@ import { Button } from "azure-devops-ui/Button";
 import { TextField } from "azure-devops-ui/TextField";
 import { List } from "azure-devops-ui/List";
 import { ObservableArray, ObservableValue } from "azure-devops-ui/Core/Observable";
-import { showRootComponent } from "../../Common";
+import { showRootComponent } from "../Common";
 
 interface ITagManagerHubState {
     tags: ObservableArray<string>;
@@ -19,7 +19,6 @@ class TagManagerHub extends React.Component<{}, ITagManagerHubState> {
 
     constructor(props: {}) {
         super(props);
-
         this.state = {
             tags: new ObservableArray<string>([]),
             filterString: new ObservableValue<string>(""),
@@ -44,7 +43,7 @@ class TagManagerHub extends React.Component<{}, ITagManagerHubState> {
                     placeholder="Filter tags"
                 />
                 <List
-                    items={tags.value}
+                    itemProvider={tags.map(tag => new ObservableValue<string | undefined>(tag))}
                     renderRow={this.renderTagRow}
                 />
                 <div className="pagination-controls">

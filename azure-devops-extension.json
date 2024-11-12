@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "azure-devops-extension-tag-management",
     "publisher": "JJKW1984",
-    "version": "1.0.0",
+    "version": "0.1.0",
     "name": "Azure DevOps Tag Management",
     "description": "Azure DevOps Extension",
     "categories": [
