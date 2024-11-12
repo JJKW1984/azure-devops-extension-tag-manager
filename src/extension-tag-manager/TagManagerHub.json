@@ -1,0 +1,15 @@
+{
+    "contributions": [
+        {
+            "id": "tag-manager-hub",
+            "type": "ms.vss-web.hub",
+            "targets": [
+                "ms.vss-work-web.work-item-hub"
+            ],
+            "properties": {
+                "name": "Tag Manager Hub",
+                "uri": "dist/extension-tag-manager/TagManagerHub.html"
+            }
+        }
+    ]
+}
