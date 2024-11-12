@@ -23,7 +23,8 @@
     "publish-extension": "tfx extension publish --manifest-globs azure-devops-extension.json src/Samples/**/*.json",
     "publish-extension:dev": "tfx extension publish --manifest-globs azure-devops-extension-dev.json src/Samples/**/*.json",
     "test": "cross-env TEST_REPORT_FILENAME=test-results.xml jest --verbose",
-    "start:dev": "webpack-dev-server --mode development"
+    "start:dev": "webpack-dev-server --mode development",
+    "start:hot": "webpack-dev-server --mode development --hot"
   },
   "dependencies": {
     "azure-devops-extension-api": "^4.234.0",
@@ -54,7 +55,8 @@
     "typescript": "^3.9.6",
     "webpack": "^5.23.0",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.0.4"
+    "webpack-dev-server": "^5.0.4",
+    "webpack-hot-middleware": "^2.25.0"
   },
   "jest": {
     "transform": {
