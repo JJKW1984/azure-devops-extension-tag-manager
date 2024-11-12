@@ -25,6 +25,20 @@ Just run:
 
 This produces a .vsix file which can be uploaded to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops)
 
+### Hot Reload and Live Debugging
+
+To enable hot reload and live debugging, follow these steps:
+
+1. Install the necessary dependencies:
+
+    npm install webpack-dev-server webpack-hot-middleware --save-dev
+
+2. Start the development server with hot reload:
+
+    npm run start:hot
+
+3. Open your browser and navigate to `https://localhost:3000`. You should see your extension with hot reload and live debugging enabled.
+
 ## Using the extension
 
 The preferred way to get started is to use the `tfx extension init` command which will clone from this sample and prompt you for replacement information (like your publisher id). Just run:
