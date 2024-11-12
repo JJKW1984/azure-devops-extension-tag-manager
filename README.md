@@ -186,6 +186,14 @@ This sample also provides a unit testing example with minimal necessary mocks.
 
 This sample adds a "Sample WorkItem Open" hub to the Boards hub group to show how to interact with the `IWorkItemFormNavigationService` service. It gives UI for you to open an existing work item (by id) or open the work item form for a new work item (by work item type). Either of these options open a dialog in the host frame.
 
+## Tag Management
+
+This sample adds a "Tag Manager Hub" to the `Work` hub group to show how to manage tags in Azure DevOps. It provides a paginated list of tags, filtered by a string, and allows users to rename, merge, and delete tags.
+
+## Project Settings Menu
+
+This sample adds a "Project Settings Menu" to the `Project Settings` hub group to show how to set permissions (Read, Update, Merge, Delete) for specific permission groups.
+
 # References
 
 The full set of documentation for developing extensions can be found at [https://docs.microsoft.com/en-us/azure/devops/extend](https://docs.microsoft.com/en-us/azure/devops/extend/?view=vsts).

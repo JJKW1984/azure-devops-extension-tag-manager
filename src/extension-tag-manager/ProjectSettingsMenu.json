@@ -1,0 +1,20 @@
+{
+    "contributions": [
+        {
+            "id": "project-settings-menu",
+            "type": "ms.vss-web.hub",
+            "targets": [
+                "ms.vss-admin-web.project-admin-hub-group"
+            ],
+            "properties": {
+                "name": "Project Settings Menu",
+                "uri": "dist/ProjectSettingsMenu/ProjectSettingsMenu.html",
+                "icon": {
+                    "light": "static/asterisk.png",
+                    "dark": "static/asterisk.png"
+                },
+                "registeredObjectId": "project-settings-menu"
+            }
+        }
+    ]
+}
